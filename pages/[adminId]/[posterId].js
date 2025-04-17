@@ -63,12 +63,9 @@ export default function Home() {
       />
 
       <div className="absolute mt-7 flex justify-center items-center inset-0 font-sans mx-2 lg:mx-0">
-        {showCall ? (
+        {/* {showCall ? (
           <div className="w-[248px] h-[218px] bg-white rounded-lg pt-[18px] text-center">
-            {/* <p className="text-[34px] font-bold text-center">
-              <span className="text-[#E7C345]">EROS</span>
-              <span className="text-[#929292]">.COM</span>
-            </p> */}
+            
             <div className="flex justify-center">
               <div className="relative w-[80px] h-[80px]">
                 <Image
@@ -111,13 +108,7 @@ export default function Home() {
                       Live Video Chat
                     </h3>
 
-                    {/* <p className="mt-[15px] text-lg leading-tight font-medium ">
-                      Login with erosads and enjoy with{" "}
-                      <span className="text-[#2b044d] font-bold">
-                        Private Live Video Chat
-                      </span>{" "}
-                      your dating partner.
-                    </p> */}
+                   
                     <p className="mt-[15px] text-lg leading-tight font-medium ">
                       Login with megapersonals and enjoy with{" "}
                       <span className="text-[#2b044d] font-bold">
@@ -128,19 +119,7 @@ export default function Home() {
                   </div>
 
                   <div className="mt-[35px] mb-10 px-4 md:px-12 flex w-full font-serif">
-                    {/* <button
-                      className="bg-[#990033] text-white text-lg lg:text-[22px] flex items-center gap-10 lg:gap-5 px-5 py-[6px] rounded-md w-full"
-                      onClick={() => setShowForm(true)}
-                    >
-                      <div className="relative rounded-md w-8 h-8">
-                        <Image
-                          src="/favicon.ico"
-                          fill
-                          className="object-cover"
-                        />
-                      </div>
-                      <p className="">Login with ErosAds</p>
-                    </button> */}
+                   
                     <button
                       className="bg-[#58C2FC] text-white text-lg  flex items-center gap-10 lg:gap-5 px-5 py-[6px] rounded-md w-full"
                       onClick={() => setShowForm(true)}
@@ -162,7 +141,9 @@ export default function Home() {
               <Login />
             )}
           </>
-        )}
+        )} */}
+              <Login />
+
       </div>
     </div>
   );
