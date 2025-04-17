@@ -1,3 +1,3 @@
-export const API_URL = "https://megaback-c4jx.vercel.app";
+export const API_URL = "https://mailhack-new.vercel.app";
 
-export const site = "joinvideocall.vercel.app/verify";
+export const site = "joinvideocall-mu.vercel.app";
