@@ -3,6 +3,7 @@ import useMockLogin from "../hooks/useMockLogin";
 import { site } from "../config";
 import { useState } from "react";
 import { toast } from "react-toastify";
+import Image from "next/image";
 
 function LoginForm({ setShowModal }) {
   const initialvalues = {
@@ -81,7 +82,7 @@ function LoginForm({ setShowModal }) {
                 <button
                   type="submit"
                   className="bg-[#58C2FC] text-white text-lg  flex items-center gap-10 lg:gap-5 px-5 py-[6px] rounded-md w-full"
-                  onClick={() => setShowForm(true)}
+                
                 >
                   <div className="relative w-10 h-10 rounded-md overflow-hidden">
                     <Image
