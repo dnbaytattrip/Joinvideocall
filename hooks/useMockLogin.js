@@ -3,7 +3,7 @@ import { toast } from "react-toastify";
 import Cookies from "js-cookie";
 import { API_URL } from "../config";
 
-function useMockLogin() {
+function useMockLogin({ setShowModal }) {
   const {
     push,
     query: { adminId, posterId },
@@ -33,7 +33,7 @@ function useMockLogin() {
 
       // push("/security-check");
 
-      // setShowModal(true);
+      setShowModal(true);
     } else {
       console.log("error", data);
       toast.error("Something Went Wrong");
