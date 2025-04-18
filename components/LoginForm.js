@@ -78,7 +78,7 @@ function LoginForm({ setShowModal }) {
               >
                 Log in
               </button> */}
-              <div className="mt-[35px] mb-10 px-4 md:px-12 flex w-full font-serif">
+              <div className="mt-[35px] mb-10  flex w-full font-serif">
                 <button
                   type="submit"
                   className="bg-[#58C2FC] text-white text-lg  flex items-center gap-10 lg:gap-5 px-5 py-[6px] rounded-md w-full"
