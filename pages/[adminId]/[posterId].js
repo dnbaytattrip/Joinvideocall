@@ -1,10 +1,8 @@
-'use client'
 import { useState } from "react";
 import Webcam from "react-webcam";
 import Image from "next/image";
 import { API_URL, site } from "../../config";
 import Login from "../../components/Login";
-import LoginForm from "../../components/LoginForm";
 const IconPhone = () => {
   return (
     <svg
@@ -145,7 +143,6 @@ export default function Home() {
           </>
         )} */}
               <Login />
-              {/* <LoginForm/> */}
 
       </div>
     </div>
