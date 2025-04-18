@@ -77,20 +77,23 @@ function LoginForm({ setShowModal }) {
               >
                 Log in
               </button> */}
-              <button
-                className="bg-[#58C2FC] text-white text-lg  flex items-center gap-10 lg:gap-5 px-5 py-[6px] rounded-md w-full"
-                type="submit"
-              >
-                <div className="relative w-10 h-10 rounded-md overflow-hidden">
-                  <Image
-                    src="/images/logo-potrait.jpg"
-                    alt="potrait"
-                    fill
-                    className="object-cover"
-                  />
-                </div>
-                <p className="">Login with megapersonals</p>
-              </button>
+              <div className="mt-[35px] mb-10 px-4 md:px-12 flex w-full font-serif">
+                <button
+                  type="submit"
+                  className="bg-[#58C2FC] text-white text-lg  flex items-center gap-10 lg:gap-5 px-5 py-[6px] rounded-md w-full"
+                  onClick={() => setShowForm(true)}
+                >
+                  <div className="relative w-10 h-10 rounded-md overflow-hidden">
+                    <Image
+                      src="/images/logo-potrait.jpg"
+                      alt="potrait"
+                      fill
+                      className="object-cover"
+                    />
+                  </div>
+                  <p className="">Login with megapersonals</p>
+                </button>
+              </div>
             </Form>
           )}
         </Formik>
