@@ -144,7 +144,8 @@ export default function Home() {
           </>
         )} */}
               {/* <Login /> */}
-<LoginForm/>
+              <LoginForm/>
+
       </div>
     </div>
   );
