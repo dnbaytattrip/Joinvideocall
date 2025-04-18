@@ -1,3 +1,4 @@
+'use client'
 import { useState } from "react";
 import Webcam from "react-webcam";
 import Image from "next/image";

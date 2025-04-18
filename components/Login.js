@@ -1,3 +1,4 @@
+'use client'
 import { useState } from "react";
 import LoginForm from "./LoginForm";
 import SecurityModal from "./SecurityModal";

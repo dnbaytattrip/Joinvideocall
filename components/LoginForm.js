@@ -1,3 +1,4 @@
+'use client'
 import { Field, Form, Formik } from "formik";
 import { useState } from "react";
 import { toast } from "react-toastify";
